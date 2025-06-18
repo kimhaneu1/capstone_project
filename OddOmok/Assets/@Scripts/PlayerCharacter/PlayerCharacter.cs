@@ -1,6 +1,5 @@
 using Fusion;
 using UnityEngine;
-using static BoardManager;
 
 public class PlayerCharacter : NetworkBehaviour
 {

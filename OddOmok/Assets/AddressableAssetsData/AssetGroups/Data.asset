@@ -15,8 +15,32 @@ MonoBehaviour:
   m_GroupName: Data
   m_GUID: 037887fd40b4399498ac404e74dd4aff
   m_SerializeEntries:
-  - m_GUID: be886a649425b1c4a93f06b1dfc35272
-    m_Address: TestData
+  - m_GUID: 33612cfbddb8b3e49b0bd0a3a647ea00
+    m_Address: Slime
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8390d0fadfc25374eb2849d0e95bf548
+    m_Address: Goblin
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a419a2abae787d34bbb66ed52d878a64
+    m_Address: Cloud
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d58bdc0bb9a09fa47959376582744bc0
+    m_Address: Mong
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d60428a4e86996d4d9560108b39c88a1
+    m_Address: Pudding
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad

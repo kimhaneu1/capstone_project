@@ -15,14 +15,62 @@ MonoBehaviour:
   m_GroupName: Prefabs
   m_GUID: 632aba6d70692bf44b7b3d92d3082806
   m_SerializeEntries:
+  - m_GUID: 0415b419233a5c0478e25991cb4104a7
+    m_Address: UI_RematchPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04c209f2cab45ec488fb0a172ca6bc8e
+    m_Address: UI_GameResultPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 1fecd30376ef8a14f8cd7f5d389a7b83
     m_Address: '@PlayerCharacter'
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20a4fbdfb1a9fef429cedb8805e45335
+    m_Address: UI_SettingPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 392a572c5a7977b49b3cce94cbded86e
+    m_Address: UI_NoticePopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 56aa80d933e4cf945930fbeda30287e4
+    m_Address: UI_SelectRankingPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e259f89917a7ba40a900abc75d967b4
+    m_Address: UI_MailBoxPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 711d9cff380172143bdf8115e75df111
     m_Address: UI_MatchMakingPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7a771a5fc19f5014ca7a7808838180d9
+    m_Address: UI_InfoPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - PreLoad
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bff5cb7cc175bed49b9a7dc69bd343f9
+    m_Address: UI_InventoryPopup
     m_ReadOnly: 0
     m_SerializedLabels:
     - PreLoad

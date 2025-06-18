@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 9ce9e64df7672e54093e2ada28293379
+guid: 8c8c9d5f861cd6843950678845231ef8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2597628209732510419
-    second: whiteSlime_0
+      213: 4553912464026911583
+    second: WhiteSlime_0
   - first:
-      213: 3895205824203367520
-    second: whiteSlime_1
+      213: -6807528833345244609
+    second: WhiteSlime_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,6 +113,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -129,13 +142,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: whiteSlime_0
+      name: WhiteSlime_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4
-        width: 66
-        height: 62
+        x: 6
+        y: 59
+        width: 584
+        height: 479
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d2e3ab0811ac0420800000000000000
-      internalID: 2597628209732510419
+      spriteID: f534c84224fb23f30800000000000000
+      internalID: 4553912464026911583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: whiteSlime_1
+      name: WhiteSlime_1
       rect:
         serializedVersion: 2
-        x: 60
-        y: 48
-        width: 10
-        height: 14
+        x: 110
+        y: 478
+        width: 98
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 064aca63f0d8e0630800000000000000
-      internalID: 3895205824203367520
+      spriteID: f323a3a089cc681a0800000000000000
+      internalID: -6807528833345244609
       vertices: []
       indices: 
       edges: []
@@ -176,7 +189,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -185,7 +198,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WhiteSlime_0: 4553912464026911583
+      WhiteSlime_1: -6807528833345244609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

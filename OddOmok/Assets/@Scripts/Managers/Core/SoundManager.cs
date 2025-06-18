@@ -46,7 +46,7 @@ public class SoundManager
         audioSource.Play();
     }
 
-    public void Play(Define.ESound type, string key, float pitch = 1.0f)
+    public void Play(Define.ESound type, string key, float volume = 1.0f, float pitch = 1.0f)
     {
         AudioSource audioSource = _audioSources[(int)type];
 
@@ -58,6 +58,7 @@ public class SoundManager
                     audioSource.Stop();
 
                 audioSource.clip = audioClip;
+                audioSource.volume = volume;
                 audioSource.Play();
             });
         }
@@ -66,12 +67,13 @@ public class SoundManager
             LoadAudioClip(key, (audioClip) =>
             {
                 audioSource.pitch = pitch;
+                audioSource.volume = volume;
                 audioSource.PlayOneShot(audioClip);
             });
         }
     }
 
-    public void Play(Define.ESound type, AudioClip audioClip, float pitch = 1.0f)
+    public void Play(Define.ESound type, AudioClip audioClip, float volume = 1.0f, float pitch = 1.0f)
     {
         AudioSource audioSource = _audioSources[(int)type];
 
@@ -81,11 +83,13 @@ public class SoundManager
                 audioSource.Stop();
 
             audioSource.clip = audioClip;
+            audioSource.volume = volume;
             audioSource.Play();
         }
         else
         {
             audioSource.pitch = pitch;
+            audioSource.volume = volume;
             audioSource.PlayOneShot(audioClip);
         }
     }
