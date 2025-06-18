@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class UI_Popup : UI_Base
@@ -15,10 +14,5 @@ public class UI_Popup : UI_Base
     public virtual void ClosePopupUI()
     {
         Managers.UI.ClosePopupUI(this);
-    }
-
-    public virtual void OnDestroy()
-    {
-        ClosePopupUI();
     }
 }

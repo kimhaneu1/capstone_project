@@ -3,6 +3,7 @@ using Fusion.Sockets;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,8 +17,6 @@ public class GameServerManager : SimulationBehaviour, INetworkRunnerCallbacks
 
     private static GameServerManager _gameServer;
     public static GameServerManager GameServer { get { Init(); return _gameServer; } }
-
-    public string selectedStoneName = "Slime";
 
     public static void Init()
     {
@@ -62,7 +61,7 @@ public class GameServerManager : SimulationBehaviour, INetworkRunnerCallbacks
         Managers.Event.WaitingForMatch();
     }
 
-    public void LoadGameScene()
+    private void LoadGameScene()
     {
         Debug.Log("LoadGameScene 호출");
         if (Runner.IsSceneAuthority)
@@ -82,19 +81,10 @@ public class GameServerManager : SimulationBehaviour, INetworkRunnerCallbacks
 
     public PlayerCharacter.PlayerType GetPlayerType() => _playerType;
 
-    public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)
-    {
-        Debug.Log($"Player Left: {player.PlayerId}");
-
-        if (runner.ActivePlayers.Count() == 0)
-            runner.Shutdown();
-    }
-
     public void OnShutdown(NetworkRunner runner, ShutdownReason shutdownReason)
     {
         Debug.Log("OnShutdown 호출");
     }
-
     #region 미구현
     public void OnSceneLoadStart(NetworkRunner runner)
     {
@@ -111,6 +101,10 @@ public class GameServerManager : SimulationBehaviour, INetworkRunnerCallbacks
     public void PlayerJoined(PlayerRef player)
     {
 
+    }
+    public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)
+    {
+        
     }
     public void OnDisconnectedFromServer(NetworkRunner runner, NetDisconnectReason reason)
     {

@@ -1,6 +1,5 @@
+using Fusion;
 using UnityEngine;
-using Cysharp.Threading.Tasks;
-using System.Linq;
 
 public class UI_MatchMakingPopup : UI_Popup
 {
@@ -20,8 +19,6 @@ public class UI_MatchMakingPopup : UI_Popup
         MatchingCancelText,
     }
 
-    private bool isMatched;
-
     public override bool Init()
     {
         if (base.Init() == false)
@@ -36,26 +33,19 @@ public class UI_MatchMakingPopup : UI_Popup
 
         GetText((int)Texts.MatchingCancelText).text = "검색 취소";
 
-        GetButton((int)Buttons.MatchingCancelButton).gameObject.BindEvent((evt) => OnMatchingCancelButtonClick());
+        GetButton((int)Buttons.MatchingCancelButton).gameObject.BindEvent(async (evt) =>
+        {
+            ClosePopupUI();
+            Managers.Event.OnWaitingForMatch -= CancelImageOn;
+
+            await GameServerManager.GameServer.Runner.Shutdown();
+
+            Debug.Log("매칭 취소");
+        });
 
         CancelImageOff();
 
-        MatchingTimeout().Forget();
-
         return true;
-    }
-
-    private async UniTaskVoid MatchingTimeout()
-    {
-        await UniTask.Delay(10000);
-
-        if (!isMatched)
-        {
-            Managers.Event.OnWaitingForMatch -= CancelImageOn;
-            Managers.UI.CloseAllPopupUI();
-            Managers.UI.ShowPopupUI<UI_NoticePopup>().SetText("서버 연결에\n실패했습니다");
-            Debug.Log("10초 지나서 매칭 자동 취소");
-        }
     }
 
     private float elapsedTime = 0f;
@@ -69,28 +59,11 @@ public class UI_MatchMakingPopup : UI_Popup
 
     void CancelImageOn()
     {
-        isMatched = true;
         GetButton((int)Buttons.MatchingCancelButton).gameObject.SetActive(true);
     }
 
     void CancelImageOff()
     {
-        isMatched = false;
         GetButton((int)Buttons.MatchingCancelButton).gameObject.SetActive(false);
-    }
-
-    private async void OnMatchingCancelButtonClick()
-    {
-        await GameServerManager.GameServer.Runner.Shutdown();
-        Debug.Log("매칭 취소");
-        Managers.Event.OnWaitingForMatch -= CancelImageOn;
-        ClosePopupUI();
-    }
-
-    public override void OnDestroy()
-    {
-        base.OnDestroy();
-
-        Managers.Event.OnWaitingForMatch -= CancelImageOn;
     }
 }

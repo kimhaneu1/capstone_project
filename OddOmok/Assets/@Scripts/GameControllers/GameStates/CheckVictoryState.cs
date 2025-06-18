@@ -24,12 +24,7 @@ public class CheckVictoryState : IGameState
 
         if (BoardManager.BM.CheckVictory(_lastY, _lastX, _state))
         {
-            PlayerCharacter.PlayerType winner = 
-                (_state == BoardManager.StoneState.BlackStone)
-                ? PlayerCharacter.PlayerType.BlackPlayer
-                : PlayerCharacter.PlayerType.WhitePlayer;
-
-            BoardManager.BM.GameOver(winner);
+            BoardManager.BM.RPC_GameOver(_state);
             return;
         }
 

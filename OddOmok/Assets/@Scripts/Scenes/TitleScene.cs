@@ -9,7 +9,23 @@ public class TitleScene : BaseScene
 
         SceneType = Define.EScene.TitleScene;
 
+        //StartLoadAssets();
+
         return true;
+    }
+
+    // Start is called before the first frame update
+    void StartLoadAssets()
+    {
+        Managers.Resource.LoadAllAsync<Object>("Preload", (key, count, totalCount) =>
+        {
+            Debug.Log($"{key} {count}/{totalCount}");
+
+            if (count == totalCount)
+            {
+                //Managers.Data.Init();
+            }
+        });
     }
 
     public override void Clear()

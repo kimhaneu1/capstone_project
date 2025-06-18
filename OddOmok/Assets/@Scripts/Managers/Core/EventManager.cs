@@ -7,7 +7,6 @@ public class EventManager
     public event Action OnWaitingForMatch;
     public event Action<PlayerType> OnGameStart;
     public event Action<GameObject> OnCellClicked;
-    public event Action OnItemButtonClicked;
 
     public void WaitingForMatch()
     {
@@ -20,9 +19,5 @@ public class EventManager
     public void CellClicked(GameObject go)
     {
         OnCellClicked?.Invoke(go);
-    }
-    public void ItemButtonClicked()
-    {
-        OnItemButtonClicked?.Invoke();
     }
 }

@@ -75,6 +75,3 @@ OddOmok/[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # plasticSCM(unity version control)
 OddOmok/.plastic/
-
-# GPGS
-OddOmok/Assets/StreamingAssets
