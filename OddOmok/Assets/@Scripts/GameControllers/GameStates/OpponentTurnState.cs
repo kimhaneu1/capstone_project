@@ -11,14 +11,16 @@ public class OpponentTurnState : IGameState
         _uiGameScene = uiGameScene;
     }
 
-    public void Enter() 
+    public void Enter()
     { 
         Debug.Log("상대방 차례");
         BoardManager.BM.OnStonePlaced += HandleStonePlace;
+        _uiGameScene.ChangeTimerAlpha(0.5f);
+        BoardManager.BM.StartTurnTimer();
     }
     public void Update()
     {
-
+        BoardManager.BM.UpdateTimer();
     }
     public void Exit() 
     {

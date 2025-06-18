@@ -15,10 +15,12 @@ public class VanishingOpponentTurnState : IGameState
     {
         Debug.Log("사라지는 모드_상대방 차례");
         BoardManager.BM.OnStonePlaced += HandleStonePlace;
+        _uiGameScene.ChangeTimerAlpha(0.5f);
+        BoardManager.BM.StartTurnTimer();
     }
     public void Update()
     {
-
+        BoardManager.BM.UpdateTimer();
     }
     public void Exit()
     {

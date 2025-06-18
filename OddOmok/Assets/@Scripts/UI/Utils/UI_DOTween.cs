@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 using TMPro;
 public class UI_DOTween
@@ -46,6 +47,9 @@ public class UI_DOTween
         return sequence;
     }
 
+    /// <summary>
+    /// Fade효과 애니메이션
+    /// </summary>
     public static Tween ApplyFadeMovement(TMP_Text target, float duration = 1.0f)
     {
         if (target == null) return null;
@@ -60,6 +64,45 @@ public class UI_DOTween
 
         return sequence;
     }
+
+    /// <summary>
+    /// Alpha 깜빡임 효과 애니메이션: 게임 내 아이템 사용
+    /// </summary>
+    public static Tween ApplyAlphaBlink(Image target, float minAlpha = 0f, float maxAlpha = 1f, float blinkSpeed = 0.5f, int blinkCount = 5)
+    {
+        if (target == null) return null;
+
+        Sequence sequence = DOTween.Sequence();
+        sequence.SetTarget(target);
+
+        for (int i = 0; i < blinkCount; i++)
+        {
+            sequence
+                .Append(target.DOFade(minAlpha, blinkSpeed / 2))
+                .Append(target.DOFade(maxAlpha, blinkSpeed / 2));
+        }
+
+        // 마지막에 강제로 maxAlpha로 설정
+        sequence.Append(target.DOFade(maxAlpha, 0.01f));
+
+        return sequence;
+    }
+
+    /// <summary>
+    /// 스위치 토글 - 0에서 24로 부드럽게 이동 + 배경변경
+    /// </summary>
+    public static Tween ApplySwitchToggle(Button target)
+    {
+        if(target == null) return null;
+
+        Sequence sequence = DOTween.Sequence();
+        sequence.SetTarget(target);
+
+        sequence
+            .Append(target.transform.DOMoveX(24, 5.0f));
+
+        return sequence;
+    } 
 
     /// <summary>
     /// 모든 DOTween 애니메이션 정지

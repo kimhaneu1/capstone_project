@@ -128,8 +128,18 @@ public class UIManager
 
         return popup;
     }
+    
+    public T GetPopup<T>() where T : UI_Popup
+    {
+        foreach (var popup in GetPopupStack())
+        {
+            if (popup is T tPopup)
+                return tPopup;
+        }
+        return null;
+    }
 
-    public IEnumerable<UI_Popup> GetPopupStack()
+    private IEnumerable<UI_Popup> GetPopupStack()
     {
         return _popupStack;
     }
@@ -140,10 +150,7 @@ public class UIManager
             return;
 
         if (_popupStack.Peek() != popup)
-        {
-            Debug.Log("Close Popup Failed!");
             return;
-        }
 
         ClosePopupUI();
     }

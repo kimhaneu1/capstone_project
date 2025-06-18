@@ -1,6 +1,7 @@
 using Fusion;
 using System;
 using UnityEngine;
+using Cysharp.Threading.Tasks;
 using static PlayerCharacter;
 
 public class BoardManager : NetworkBehaviour
@@ -11,18 +12,23 @@ public class BoardManager : NetworkBehaviour
     private GameStateMachine _stateMachine;
     private UI_GameScene _uiGameScene;
 
+    [Networked] public int TurnCount { get; private set; }
+    public PlayerCharacter.PlayerType CurrentTurnType => (TurnCount % 2 == 0)
+    ? PlayerCharacter.PlayerType.BlackPlayer : PlayerCharacter.PlayerType.WhitePlayer;
+
+    [Networked] public TickTimer TurnTimeLimit { get; private set; }
+
+    private const int _boardSize = 13;
+    private const float _timeLimitSeconds = 30.9f;
+
+    [Networked, Capacity(_boardSize * _boardSize)]
+    public NetworkArray<StoneState> OmokBoard { get; }
     public enum StoneState
     {
         Empty,
         BlackStone,
         WhiteStone,
     }
-
-    private const int _boardSize = 13;
-
-    [Networked, Capacity(_boardSize * _boardSize)]
-    public NetworkArray<StoneState> OmokBoard { get; }
-
     public StoneState this[int y, int x]
     {
         get => GetStoneState(y, x);
@@ -34,10 +40,6 @@ public class BoardManager : NetworkBehaviour
     public StoneState GetStoneState(int y, int x) => OmokBoard.Get(BoardIndex(y, x));
     private void SetStoneState(int y, int x, StoneState state) => OmokBoard.Set(BoardIndex(y, x), state);
 
-    [Networked] public int TurnCount { get; private set; }
-    public PlayerCharacter.PlayerType CurrentTurnType => (TurnCount % 2 == 0)
-    ? PlayerCharacter.PlayerType.BlackPlayer : PlayerCharacter.PlayerType.WhitePlayer;
-
     private void Awake()
     {
         _bM = this;
@@ -47,14 +49,39 @@ public class BoardManager : NetworkBehaviour
         Managers.Event.OnGameStart -= OnGameStart;
         Managers.Event.OnGameStart += OnGameStart;
     }
-
-    public override void FixedUpdateNetwork()
+    private void Update()
     {
         _stateMachine?.Update();
     }
 
-    private void OnGameStart(PlayerType localType)
+    [Rpc(sources: RpcSources.All, targets: RpcTargets.All)]
+    private void RPC_SetUserState(PlayerRef requester, string stoneName, int MMR, bool winner = false)
     {
+        if (GameServerManager.GameServer.Runner.LocalPlayer == requester)
+            return;
+
+        _uiGameScene.SetStoneUI(stoneName);
+        _uiGameScene.SetMMRChangeUI(MMR);
+
+        Managers.Data.UpdateGameCount();
+        Managers.Data.UpdateMMR(MMR, winner);
+    }
+
+    [Rpc(sources: RpcSources.All, targets: RpcTargets.All)]
+    public void RPC_OnChatInputButtonClicked(PlayerRef requester, string message)
+    {
+        bool isLocal = (GameServerManager.GameServer.Runner.LocalPlayer == requester);
+        _uiGameScene.OnChatInputButtonClicked(isLocal, message);
+    }
+
+    private async void OnGameStart(PlayerType localType)
+    {
+        await UniTask.Delay(1000); // 여기에 나 vs 상대 대결 시작 애니메이션 추가
+
+        Debug.Log("Game Start!");
+
+        RPC_SetUserState(GameServerManager.GameServer.Runner.LocalPlayer, GameServerManager.GameServer.selectedStoneName, Managers.Data.dataSettings.MMR);
+
         if (localType == PlayerType.BlackPlayer)
             _stateMachine.ChangeState(new PlayerTurnState(_stateMachine, _uiGameScene));
         else
@@ -86,6 +113,31 @@ public class BoardManager : NetworkBehaviour
         _uiGameScene.UI_RemoveCell(y, x);
     }
 
+    public void StartTurnTimer()
+    {
+        if (!HasStateAuthority)
+            return;
+
+        TurnTimeLimit = TickTimer.CreateFromSeconds(Runner, _timeLimitSeconds);
+    }
+    private float _timer = 1f;
+    public void UpdateTimer()
+    {
+        _timer += Time.deltaTime;
+        if (_timer < 1f) return;
+        _timer = 0f;
+
+        if (TurnTimeLimit.Expired(Runner) && HasStateAuthority)
+        {
+            Debug.Log("제한시간 초과!");
+            PlayerCharacter.PlayerType winner = (CurrentTurnType == PlayerType.BlackPlayer)
+            ? PlayerType.WhitePlayer : PlayerType.BlackPlayer;
+            RPC_GameOver(winner);
+        }
+
+        _uiGameScene.UpdateTimerUI(TurnTimeLimit.RemainingTime(Runner));
+    }
+
     public bool TryEnterVanishingMode()
     {
         if (!HasStateAuthority || TurnCount != 15)
@@ -101,13 +153,40 @@ public class BoardManager : NetworkBehaviour
         _stateMachine.ChangeState(new EnterVanishingModeState(_stateMachine, _uiGameScene));
     }
 
-    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
-    public void RPC_GameOver(StoneState winner)
+    public void GameOver(PlayerCharacter.PlayerType player)
     {
         if (!HasStateAuthority)
             return;
 
-        _stateMachine.ChangeState(new GameOverState(_stateMachine, _uiGameScene, winner));
+        RPC_GameOver(player);
+    }
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    private void RPC_GameOver(PlayerCharacter.PlayerType player)
+    {
+        _stateMachine.ChangeState(new GameOverState(_stateMachine, _uiGameScene, player));
+    }
+
+    public bool _isRematchRequested;
+    [Rpc(RpcSources.All, RpcTargets.All)]
+    public void RPC_RequestRematch(PlayerRef requester)
+    {
+        if (GameServerManager.GameServer.Runner.LocalPlayer == requester)
+            return;
+
+        Managers.UI.ShowPopupUI<UI_RematchPopup>();
+    }
+
+    [Rpc(RpcSources.All, RpcTargets.All)]
+    public void RPC_RespondRematch(PlayerRef responder, bool accepted)
+    {
+        if (accepted)
+        {
+            GameServerManager.GameServer.LoadGameScene();
+            return;
+        }
+
+        if (GameServerManager.GameServer.Runner.LocalPlayer != responder)
+            Managers.UI.ShowPopupUI<UI_NoticePopup>().SetText("상대가 재대결을\n거절했습니다");
     }
 
     public bool CheckVictory(int y, int x, StoneState state)
@@ -147,5 +226,10 @@ public class BoardManager : NetworkBehaviour
         }
 
         return count;
+    }
+
+    private void OnDestroy()
+    {
+        Managers.Event.OnGameStart -= OnGameStart;
     }
 }

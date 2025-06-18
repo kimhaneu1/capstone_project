@@ -1,4 +1,5 @@
 using UnityEngine;
+using static Unity.Collections.Unicode;
 
 public class PlayerTurnState : IGameState
 {
@@ -16,10 +17,12 @@ public class PlayerTurnState : IGameState
         Debug.Log("내 차례");
         Managers.Event.OnCellClicked += HandleCellClicked;
         BoardManager.BM.OnStonePlaced += HandleStonePlace;
+        _uiGameScene.ChangeTimerAlpha(1f);
+        BoardManager.BM.StartTurnTimer();
     }
     public void Update()
     {
-
+        BoardManager.BM.UpdateTimer();
     }
     public void Exit() 
     {

@@ -1,0 +1,1118 @@
+fileFormatVersion: 2
+guid: bbe5582bc2b31494682b049263abf8c5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8137764403568097671
+    second: ImageGradle_0
+  - first:
+      213: -1071234465020516958
+    second: ImageGradle_1
+  - first:
+      213: 2009463543786017702
+    second: ImageGradle_2
+  - first:
+      213: -2695014150812978623
+    second: ImageGradle_3
+  - first:
+      213: -2817747992935092619
+    second: ImageGradle_4
+  - first:
+      213: 1604542664069791727
+    second: ImageGradle_5
+  - first:
+      213: -8888932183262348198
+    second: ImageGradle_6
+  - first:
+      213: 6037692713571696377
+    second: ImageGradle_7
+  - first:
+      213: -3960422959630311928
+    second: ImageGradle_8
+  - first:
+      213: 5662096275126011159
+    second: ImageGradle_9
+  - first:
+      213: 7069145660181956840
+    second: ImageGradle_10
+  - first:
+      213: 7175716694497152366
+    second: ImageGradle_11
+  - first:
+      213: 2009231546962079273
+    second: ImageGradle_12
+  - first:
+      213: -3698675314088936652
+    second: ImageGradle_13
+  - first:
+      213: -453720661210440827
+    second: ImageGradle_14
+  - first:
+      213: 6629584333408215169
+    second: ImageGradle_15
+  - first:
+      213: -9074144773302202066
+    second: ImageGradle_16
+  - first:
+      213: 1307538345130622447
+    second: ImageGradle_17
+  - first:
+      213: -4607227285646046304
+    second: ImageGradle_18
+  - first:
+      213: 7093943459529438815
+    second: ImageGradle_19
+  - first:
+      213: 8498011673682413457
+    second: ImageGradle_20
+  - first:
+      213: 3569885162682159024
+    second: ImageGradle_21
+  - first:
+      213: -2541654985114563301
+    second: ImageGradle_22
+  - first:
+      213: -1549567437243263800
+    second: ImageGradle_23
+  - first:
+      213: 7946861511309797626
+    second: ImageGradle_24
+  - first:
+      213: -364454181653797937
+    second: ImageGradle_25
+  - first:
+      213: 2950200060888299887
+    second: ImageGradle_26
+  - first:
+      213: -1488614173291809076
+    second: ImageGradle_27
+  - first:
+      213: 979049525488074997
+    second: ImageGradle_28
+  - first:
+      213: 5256021527596803900
+    second: ImageGradle_29
+  - first:
+      213: -316598482506701180
+    second: ImageGradle_30
+  - first:
+      213: -4434868310051456783
+    second: ImageGradle_31
+  - first:
+      213: 2052187858535110580
+    second: ImageGradle_32
+  - first:
+      213: 4119625349356270850
+    second: ImageGradle_33
+  - first:
+      213: 7615109286027939696
+    second: ImageGradle_34
+  - first:
+      213: -8894887456740231841
+    second: ImageGradle_35
+  - first:
+      213: 1472001868631338274
+    second: ImageGradle_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ImageGradle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 865
+        width: 198
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9764183046ad01f80800000000000000
+      internalID: -8137764403568097671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_1
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 929
+        width: 48
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5eb410ee53221f0800000000000000
+      internalID: -1071234465020516958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_2
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 903
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3967c427c03eb10800000000000000
+      internalID: 2009463543786017702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_3
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 903
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142342c98e2699ad0800000000000000
+      internalID: -2695014150812978623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_4
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 903
+        width: 90
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ea886212955e8d0800000000000000
+      internalID: -2817747992935092619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_5
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 903
+        width: 90
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fefb6de3d0b744610800000000000000
+      internalID: 1604542664069791727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 549
+        width: 255
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5c3c10664b24a480800000000000000
+      internalID: -8888932183262348198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_7
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 831
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9feb76fa8813ac350800000000000000
+      internalID: 6037692713571696377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_8
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 831
+        width: 66
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e1fea2d40c909c0800000000000000
+      internalID: -3960422959630311928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_9
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 823
+        width: 90
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715c2fa209ec39e40800000000000000
+      internalID: 5662096275126011159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_10
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 823
+        width: 90
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8c3a42686aa1260800000000000000
+      internalID: 7069145660181956840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_11
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 692
+        width: 350
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6dc758a054459360800000000000000
+      internalID: 7175716694497152366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_12
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 561
+        width: 350
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92eee24527932eb10800000000000000
+      internalID: 2009231546962079273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 460
+        width: 85
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bf834f56aabacc0800000000000000
+      internalID: -3698675314088936652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_14
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 458
+        width: 91
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bdb49667f04b9f0800000000000000
+      internalID: -453720661210440827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_15
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 447
+        width: 80
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 180aa4183d3010c50800000000000000
+      internalID: 6629584333408215169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_16
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 451
+        width: 86
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21dad2d769221280800000000000000
+      internalID: -9074144773302202066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 91
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed76bf723f452210800000000000000
+      internalID: 1307538345130622447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 329
+        width: 91
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab849f9137df00c0800000000000000
+      internalID: -4607227285646046304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_19
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 333
+        width: 79
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5635f9bdffb27260800000000000000
+      internalID: 7093943459529438815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_20
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 328
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19786f2c7900fe570800000000000000
+      internalID: 8498011673682413457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_21
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 319
+        width: 90
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf8b9234a7ca8130800000000000000
+      internalID: 3569885162682159024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_22
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 223
+        width: 80
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d45aed14a3abcd0800000000000000
+      internalID: -2541654985114563301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_23
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 243
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c45a9330a4de7ae0800000000000000
+      internalID: -1549567437243263800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_24
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 221
+        width: 75
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af828d4b07ce84e60800000000000000
+      internalID: 7946861511309797626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 216
+        width: 88
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3ae9d4ad231faf0800000000000000
+      internalID: -364454181653797937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_26
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 215
+        width: 83
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f693595135731f820800000000000000
+      internalID: 2950200060888299887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_27
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 105
+        width: 79
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc67451eb41675be0800000000000000
+      internalID: -1488614173291809076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_28
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 111
+        width: 85
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f04b303b58469d00800000000000000
+      internalID: 979049525488074997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_29
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 111
+        width: 84
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c37a6345bb321f840800000000000000
+      internalID: 5256021527596803900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_30
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 104
+        width: 81
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486a2c98b573b9bf0800000000000000
+      internalID: -316598482506701180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 94
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8feb9d4ce2472c0800000000000000
+      internalID: -4434868310051456783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_32
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 94
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7da500cf5da7c10800000000000000
+      internalID: 2052187858535110580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 9
+        width: 78
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2053314bd69db2930800000000000000
+      internalID: 4119625349356270850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_34
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 81
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f497f8c8d4ea960800000000000000
+      internalID: 7615109286027939696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_35
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 6
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55bbe73cf20f8480800000000000000
+      internalID: -8894887456740231841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ImageGradle_36
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 75
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d6b7886e99d6410800000000000000
+      internalID: 1472001868631338274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ImageGradle_0: -8137764403568097671
+      ImageGradle_1: -1071234465020516958
+      ImageGradle_10: 7069145660181956840
+      ImageGradle_11: 7175716694497152366
+      ImageGradle_12: 2009231546962079273
+      ImageGradle_13: -3698675314088936652
+      ImageGradle_14: -453720661210440827
+      ImageGradle_15: 6629584333408215169
+      ImageGradle_16: -9074144773302202066
+      ImageGradle_17: 1307538345130622447
+      ImageGradle_18: -4607227285646046304
+      ImageGradle_19: 7093943459529438815
+      ImageGradle_2: 2009463543786017702
+      ImageGradle_20: 8498011673682413457
+      ImageGradle_21: 3569885162682159024
+      ImageGradle_22: -2541654985114563301
+      ImageGradle_23: -1549567437243263800
+      ImageGradle_24: 7946861511309797626
+      ImageGradle_25: -364454181653797937
+      ImageGradle_26: 2950200060888299887
+      ImageGradle_27: -1488614173291809076
+      ImageGradle_28: 979049525488074997
+      ImageGradle_29: 5256021527596803900
+      ImageGradle_3: -2695014150812978623
+      ImageGradle_30: -316598482506701180
+      ImageGradle_31: -4434868310051456783
+      ImageGradle_32: 2052187858535110580
+      ImageGradle_33: 4119625349356270850
+      ImageGradle_34: 7615109286027939696
+      ImageGradle_35: -8894887456740231841
+      ImageGradle_36: 1472001868631338274
+      ImageGradle_4: -2817747992935092619
+      ImageGradle_5: 1604542664069791727
+      ImageGradle_6: -8888932183262348198
+      ImageGradle_7: 6037692713571696377
+      ImageGradle_8: -3960422959630311928
+      ImageGradle_9: 5662096275126011159
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

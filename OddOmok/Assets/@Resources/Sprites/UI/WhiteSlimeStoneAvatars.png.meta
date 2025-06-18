@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 23cbfe0491b962248a73b2e581b42653
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5583488718808869238
+    second: WhiteSlimeStoneAvatars_0
+  - first:
+      213: -7101703432795547104
+    second: WhiteSlimeStoneAvatars_1
+  - first:
+      213: -891604731105732523
+    second: WhiteSlimeStoneAvatars_2
+  - first:
+      213: -2678973822635773062
+    second: WhiteSlimeStoneAvatars_3
+  - first:
+      213: 5751512589525583158
+    second: WhiteSlimeStoneAvatars_4
+  - first:
+      213: 1560447755666057638
+    second: WhiteSlimeStoneAvatars_5
+  - first:
+      213: -8415219066698605909
+    second: WhiteSlimeStoneAvatars_6
+  - first:
+      213: 1680227068870649849
+    second: WhiteSlimeStoneAvatars_7
+  - first:
+      213: -7117636876779830023
+    second: WhiteSlimeStoneAvatars_8
+  - first:
+      213: -2852859397909768693
+    second: WhiteSlimeStoneAvatars_9
+  - first:
+      213: -6656348766466107247
+    second: WhiteSlimeStoneAvatars_10
+  - first:
+      213: 764756273826979228
+    second: WhiteSlimeStoneAvatars_11
+  - first:
+      213: 1732344574639622505
+    second: WhiteSlimeStoneAvatars_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 953
+        width: 512
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a861ff3c7967382b0800000000000000
+      internalID: -5583488718808869238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_1
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 953
+        width: 512
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a9c04ba5ea17d90800000000000000
+      internalID: -7101703432795547104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_2
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 953
+        width: 512
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5589262983260a3f0800000000000000
+      internalID: -891604731105732523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_3
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 502
+        width: 512
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73793b808f52dad0800000000000000
+      internalID: -2678973822635773062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_4
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 502
+        width: 512
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6350cd33a3a71df40800000000000000
+      internalID: 5751512589525583158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_5
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 519
+        width: 512
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9e70757f2d7a510800000000000000
+      internalID: 1560447755666057638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 51
+        width: 512
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baad55638d2273b80800000000000000
+      internalID: -8415219066698605909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_7
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 10
+        width: 663
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7e70eed9d515710800000000000000
+      internalID: 1680227068870649849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_8
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 363
+        width: 211
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4415fa8f2193d90800000000000000
+      internalID: -7117636876779830023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_9
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 240
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0614712e7b9868d0800000000000000
+      internalID: -2852859397909768693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_10
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 240
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1989da15016ef93a0800000000000000
+      internalID: -6656348766466107247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_11
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 141
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d553977c5fc9a00800000000000000
+      internalID: 764756273826979228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhiteSlimeStoneAvatars_12
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 99
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96948f756368a0810800000000000000
+      internalID: 1732344574639622505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WhiteSlimeStoneAvatars_0: -5583488718808869238
+      WhiteSlimeStoneAvatars_1: -7101703432795547104
+      WhiteSlimeStoneAvatars_10: -6656348766466107247
+      WhiteSlimeStoneAvatars_11: 764756273826979228
+      WhiteSlimeStoneAvatars_12: 1732344574639622505
+      WhiteSlimeStoneAvatars_2: -891604731105732523
+      WhiteSlimeStoneAvatars_3: -2678973822635773062
+      WhiteSlimeStoneAvatars_4: 5751512589525583158
+      WhiteSlimeStoneAvatars_5: 1560447755666057638
+      WhiteSlimeStoneAvatars_6: -8415219066698605909
+      WhiteSlimeStoneAvatars_7: 1680227068870649849
+      WhiteSlimeStoneAvatars_8: -7117636876779830023
+      WhiteSlimeStoneAvatars_9: -2852859397909768693
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
